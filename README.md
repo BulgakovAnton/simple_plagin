@@ -1,1 +1,1 @@
-# simple_plagin
+# simple_plugin
