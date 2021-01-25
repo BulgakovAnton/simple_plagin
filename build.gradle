@@ -26,7 +26,7 @@ compileJava {
 
 task checkVersion(){
     println "Environment variables version = \$\\{env.forcer_version\\}"
-    println "Configuration parameters version = \$\\{JF_Version0\\} "
+    println "Configuration parameters version = \$\\{JF_Version\\} "
     println "System properties version = \$\\{system.version_JF\\} "
 }
 
