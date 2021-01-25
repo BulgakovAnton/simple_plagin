@@ -34,7 +34,7 @@ task addParam() {
 task checkVersion(){
     dependsOn addParam {
         def forcer_version = System.getenv("forcer_version")
-        println "Environment variables version = \$\\{forcer_version\\}"
+        println "Environment variables version = " ${forcer_version}
         println "Configuration parameters version = \$\\{jf_Version\\}"
         println "System properties version = \$\\{system.version_JF\\} "
     }
