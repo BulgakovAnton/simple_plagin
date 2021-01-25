@@ -24,10 +24,15 @@ compileJava {
     targetCompatibility = '1.8'
 }
 
+
+def forcer_version = System.getenv("env.forcer_version")
+def jf_Version = System.getenv("JF_versiom")
+def version_JF = System.getenv("system.version_JF")
 task checkVersion(){
-    println "Environment variables version = ${env.forcer_version}"
-    println "Configuration parameters version = ${JF_Version} "
-    println "System properties version = ${system.version_JF} "
+
+    println "Environment variables version = \$\\{env.forcer_version\\}"
+    println "Configuration parameters version = \$\\{JF_Version\\} "
+    println "System properties version = \$\\{system.version_JF\\} "
 }
 
 intellij {
