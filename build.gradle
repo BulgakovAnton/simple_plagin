@@ -24,22 +24,6 @@ compileJava {
     targetCompatibility = '1.8'
 }
 
-task addParam() {
-    doLast{
-
-    def jf_Version = System.getenv("JF_version")
-    def version_JF = System.getenv("system.version_JF")
-    }
-}
-task checkVersion(){
-    dependsOn addParam {
-        def forcer_version = System.getenv("forcer_version")
-        println "Environment variables version = " ${forcer_version}
-        println "Configuration parameters version = \$\\{jf_Version\\}"
-        println "System properties version = \$\\{system.version_JF\\} "
-    }
-}
-
 task helloEnvVariable(){
     def myEnvVar = System.getenv("MY_ENV_VAR")
     println "Environment variable MY_ENV_VAR= ${myEnvVar}"
