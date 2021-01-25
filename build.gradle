@@ -26,14 +26,14 @@ compileJava {
 
 task addParam() {
     doLast{
-    def forcer_version = System.getenv("env.forcer_version")
+    def forcer_version = System.getenv("forcer_version")
     def jf_Version = System.getenv("JF_version")
     def version_JF = System.getenv("system.version_JF")
     }
 }
 task checkVersion(){
     dependsOn addParam {
-        println "Environment variables version = \$\\{env.forcer_version\\}"
+        println "Environment variables version = \$\\{forcer_version\\}"
         println "Configuration parameters version = \$\\{jf_Version\\}"
         println "System properties version = \$\\{system.version_JF\\} "
     }
