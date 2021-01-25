@@ -26,7 +26,7 @@ compileJava {
 
 
 def forcer_version = System.getenv("env.forcer_version")
-def jf_Version = System.getenv("JF_versiom")
+def jf_Version = System.getenv("JF_version")
 def version_JF = System.getenv("system.version_JF")
 task checkVersion(){
 
