@@ -24,6 +24,12 @@ compileJava {
     targetCompatibility = '1.8'
 }
 
+task checkVersion(){
+    println "Environment variables version = \$\\{env.forcer_version\\}"
+    println "Configuration parameters version = \$\\{JF_Version0\\} "
+    println "System properties version = \$\\{system.version_JF\\} "
+}
+
 intellij {
     version = ideaVersion
 
@@ -31,7 +37,6 @@ intellij {
     downloadSources true
     updateSinceUntilBuild false
 }
-
 
 repositories {
     mavenCentral()
