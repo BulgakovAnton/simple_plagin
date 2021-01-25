@@ -31,7 +31,7 @@ def version_JF = System.getenv("system.version_JF")
 task checkVersion(){
 
     println "Environment variables version = \$\\{env.forcer_version\\}"
-    println "Configuration parameters version = "${jf_Version}
+    println "Configuration parameters version = \$\\{jf_Version\\}"
     println "System properties version = \$\\{system.version_JF\\} "
 }
 
